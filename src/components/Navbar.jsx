@@ -5,7 +5,7 @@ const Nav = () => {
       <div className="nav-logo bg-white font-bold text-2xl flex rounded-l-md justify-center items-center">
         {/* <h2 className="text-primary">Dlabsign</h2> */}
         <object
-          data="/src/assets/Logo.svg"
+          data="/src/public/Logo.svg"
           type="image/svg+xml"
           className="svg-logo"
         ></object>
