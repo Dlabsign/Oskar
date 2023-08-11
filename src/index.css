@@ -1,0 +1,416 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "schabo";
+  src: url(/src/assets/Font/SCHABO-Condensed.otf);
+}
+
+@font-face {
+  font-family: "stem-bl";
+  src: url(/src/assets/Font/Stem-Bold.otf);
+}
+
+@font-face {
+  font-family: "stem-md";
+  src: url(/src/assets/Font/Stem-Medium.otf);
+}
+@font-face {
+  font-family: "stem-rg";
+  src: url(/src/assets/Font/Stem-Regular.otf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #f84831;
+}
+/* ====================== BUTTON ====================== */
+
+
+.btn-primary {
+  @apply bg-white rounded-r text-primary  shadow-md hover:bg-orange-200 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+  font-family: "stem-rg";
+  font-size: 14px;
+  padding: 0px 12px;
+  height: 38px;
+}
+
+.btn-secondary {
+  @apply py-3 px-8 text-white ;
+  font-family: "stem-md";
+  font-size: 12px;
+  margin: 0px 5px;
+  letter-spacing: .2px;
+  border-radius: 3px;
+  
+}
+
+.active {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+.non {
+  background-color: yellow;
+  width: 20px;
+  margin-right: 2px;
+  height: 38px;
+}
+
+
+
+
+body {
+  background-color: var(--primary-color);
+}
+
+/* ====================== NAVBAR ====================== */
+
+nav {
+  box-sizing: border-box;
+  z-index: 10;
+  top: 0;
+  position: fixed;
+  background-color: var(--primary-color);
+  height: 92px;
+  width: calc(100% - 160px);
+  letter-spacing: 0.1em;
+  font-family: "stem-rg";
+}
+
+.nav-logo {
+  background-color: #fafafa;
+  width: 32%;
+  height: 100%;
+}
+
+.svg-logo {
+  width: 150px;
+}
+
+.nav-list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.list-icon i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background-color: rgb(255, 112, 93);
+  color: white;
+  margin-left: 10px;
+}
+
+.list-icon i:hover {
+  border: 1px yellow solid;
+  cursor: pointer;
+  background-color: rgb(246, 101, 81);
+}
+
+
+
+/* ====================== HEADLINE ====================== */
+.animate__animated.animate__fadeInLeft:nth-child(1) {
+  --animate-duration: 1s;
+}
+.animate__animated.animate__fadeInLeft:nth-child(2) {
+  --animate-duration: 2s;
+}
+
+.banner {
+  height: 100vh;
+}
+
+.main-headline {
+  height: 70%;
+}
+
+.main-headline h1 {
+  font-family: "schabo";
+  font-size: 150px;
+}
+
+.main-headline h6 {
+  letter-spacing: 1rem;
+}
+
+.con-img {
+  width: 50%;
+}
+
+.con-img img {
+  width: 100%;
+}
+
+.txt-head {
+  line-height: .9;
+}
+
+
+
+/* ====================== CARD ====================== */
+
+.card-container {
+  width: 30%;
+}
+
+.card {
+  background-color: #f54029;
+}
+
+.card-img {
+  width: 100%;
+  height: 250px;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  
+}
+.hastag p {
+  color: var(--primary-color);
+}
+
+.footer-btn {
+  position: relative;
+  top: -20px;
+}
+
+/* ====================== CONFERENCE & ENVENT ====================== */
+
+.event-section {
+  font-family: 'stem-md';
+}
+
+.btn-option {
+  background-color: #f54029;
+}
+
+/* ====================== INFO CONTAINER ====================== */
+
+.info-container {
+  transition: 200ms;
+  width: 95%;
+}
+
+.info-container .name {
+  width: 200px;
+}
+
+.info-container p {
+  width: 80px;
+  overflow: hidden;
+  color: white;
+  letter-spacing: .5px;
+  font-family: 'stem-rg';
+}
+.info-container:hover {
+  background-color: #f54029;
+  cursor: pointer;
+}
+
+.info-container .info-img {
+  width: 82px;
+  height: 82px;
+}
+
+.info-container .info-img img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.info-container i {
+  color: #FACC15;
+}
+
+.info-button {
+  background-color: #FACC15;
+  width: 5%;
+  color: #dd331c;
+}
+
+
+
+
+/* ====================== BANNER UPDATE CONTAINER ====================== */
+
+.updt-container {
+  background-color: #f54029;
+}
+
+.updt-left {
+  height: auto;
+}
+
+
+.slider-btn {
+  width: 80%;
+}
+
+.slider-btn .line {
+  width: 30%;
+  height: 2px;
+  background-color: #FACC15;
+}
+.updt-logo {
+  height: 62px;
+  width: 62px;
+}
+
+.updt-left .title h4 {
+  width: 50%;
+}
+
+.updt-left .title {
+  height: 70%;
+}
+
+.updt-left .paragraph i {
+  width: 72px;
+  height: 72px;
+  border: 2px solid #FACC15; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FACC15;
+}
+
+.updt-left .title h2 {
+  font-family: 'stem-rg';
+  letter-spacing: .5px;
+}
+
+/* ====================== BANNER SLIDER ====================== */
+
+.slider-container {
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px; /* Sesuaikan lebar maksimal sesuai kebutuhan */
+  margin: 0 auto;
+  position: relative;
+  border-radius: 12px;
+}
+
+.updt-right {
+  border-radius: 12px;
+
+}
+
+.slider-wrapper {
+  display: flex;
+  width: 300%; /* Sesuaikan sesuai jumlah gambar */
+  transition: transform 1s ease-in-out;
+}
+
+.slide {
+  flex-shrink: 0;
+  width: 33.333%; /* Sesuaikan sesuai jumlah gambar */
+  height: auto;
+}
+
+
+
+
+/* ====================== PERSONAL AWARDS ====================== */
+
+.awards {
+  background-color: #f54029;
+  height: 56vh;
+  overflow: hidden;
+}
+
+
+.awards .header {
+  width: 25%;
+}
+
+.awards .header h2 {
+  font-family: 'stem-md';
+  letter-spacing: 1px;
+}
+
+.awards .header p {
+  font-size: 14px;
+  font-family: 'stem-rg';
+  color: #FACC15;
+}
+
+.awards .button button {
+  width: 45px;
+  height: 45px;
+  background-color: #fb5640;
+  border-radius: 100%;
+  color: white;
+}
+
+
+/* ====================== AWARDS CARD ====================== */
+
+.moved {
+  transform: translateX(100px);
+}
+
+.awards-card {
+  width: 100%;
+}
+
+.card-logo {
+  width: 76px;
+}
+
+.awards-card h2 {
+  font-family: 'stem-rg';
+  letter-spacing: .1px;
+}
+
+.awards-card p {
+  font-family: 'stem-rg';
+  letter-spacing: .1px; 
+}
+
+/* ====================== FOOTER ====================== */
+
+.footer {
+  background-color: #f54029;
+}
+
+.footer .w-36 h2 {
+  color: #ebebeb;
+}
+
+.footer .w-36 p {
+  opacity: 90%;
+  margin-top: .2rem;
+}
+
+.footer input {
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.footer object {
+  width: 100px;
+  background-color: #fff;
+}
+
+
+.ngisordewe {
+  color: white;
+  background-color: #843025;
+}
+
+
