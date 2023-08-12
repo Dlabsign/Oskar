@@ -13,7 +13,10 @@ const Card = () => {
           </p>
         </div>
         <div className="card-img p-2 bg-white rounded-md shadow-lg my-5">
-          <img src="/src/public/img/ill.png" alt="" />
+          <img
+            src="https://images.template.net/wp-content/uploads/2016/12/20114319/Graphic-Design-Illustration-of-Neptune.jpg?width=550g"
+            alt=""
+          />
         </div>
         <h3 className=" text-white  text-2xl font-medium tracking-tight">
           Writes Upside-Down

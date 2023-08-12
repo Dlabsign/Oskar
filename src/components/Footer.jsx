@@ -3,7 +3,7 @@ const Footer = () => {
       <div className="footer  w-full h-3/6 bg-black  text-white flex justify-between items-start px-14 py-16 rounded-t-xl">
         <div className="footer-logo  w-1/4">
           <object
-            data="/src/assets/Logo.svg"
+            data="./Logo.svg"
             type="image/svg+xml"
             className="svg-logo"
           ></object>

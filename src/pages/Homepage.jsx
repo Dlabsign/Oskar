@@ -49,7 +49,7 @@ const Home = () => {
               <BtnComponent btnP="LEARN MORE" />
             </div>
             <div className="con-img  w-3/5 flex items-center justify-center">
-              <img src="/src/public/img/cube_fsd.png" alt="" />
+              <img src="./img/cube_fsd.png" alt="" />
             </div>
           </div>
         </div>
